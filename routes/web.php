@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('skills', function () {
     return ['php', 'javascript', 'laravel'];
 });
+
+Route::get('projects/create', 'ProjectController@create');
+Route::post('projects', 'ProjectController@store');
