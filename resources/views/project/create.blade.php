@@ -8,6 +8,8 @@
 <body>
 
     <div id="app" class="container">
+        <example></example>
+
         @include ('project.list')
         
         <form method="POST" action="/projects" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
@@ -29,8 +31,8 @@
             </div>
         </form>
     </div>
-    <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script src="/js/vendor.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>
